@@ -101,26 +101,6 @@ $('.mortgage-order-list-mobile__more-button').click(function () {
     }
 });
 
-// плавный слайдинг контента в "О компании"
-/*
-$('.about-block h3').click(function () {
-    $(this).parent('.about-block').toggleClass('about-block--hidden');
-});
-
-$(function () {
-    $('.about-block .about-block__description').each(function () {
-       $(this).css({
-           'max-height': $(this).height()
-       });
-    });
-});*/
-
-// $(function () {
-//     if($(window).width() <=999) {
-//         $('.about-block--hidden .about-block__description').css('display', 'none');
-//     }
-// });
-
 function aboutBlockDescrHiding() {
     if($(window).width() <=999) {
         $('.about-block--hidden .about-block__description').css('display', 'none');

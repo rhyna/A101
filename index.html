@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=1400">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header-logo header__logo">
+                <a href="#">
+                    <img src="./assets/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header-menu header__menu">
+                <ul class="header-menu__content">
+                    <li class="header-menu-item header-menu__item">
+                        <a href="#promo">Новостройки от A101</a>
+                    </li>
+                    <li class="header-menu-item header-menu__item">
+                        <a href="#mortgage">Ипотека</a>
+                    </li>
+                    <li class="header-menu-item header-menu__item header-menu__item--last">
+                        <a href="#about">О компании</a>
+                    </li>
+                    <li class="header-menu-item header-menu__item header-menu__item--last">
+                        <a href="#sales-offices">Офисы продаж</a>
+                    </li>
+                    <li class="header-menu-item header-menu__item header-menu-item--more">
+                        <span>Еще<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6.21"><defs><style>.header-menu-item__arrow-more{fill:none;stroke:#ed1c24;stroke-linecap:round;stroke-miterlimit:10;}</style></defs><title>Ресурс 8</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="header-menu-item__arrow-more" points="0.5 5.71 5.5 0.71 10.5 5.71"/></g></g></svg></span>
+                        <ul>
+                            <li class="header-menu-item header-menu__item">
+                                <a href="#about">О компании</a>
+                            </li>
+                            <li class="header-menu-item header-menu__item">
+                                <a href="#sales-offices">Офисы продаж</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="header-menu__button">
+                    <span>Обратный звонок</span>
+                </button>
+            </div>
+            <div class="header-phone header__phone">
+                <a href="tel:+84954017381">8 (495) 401-73-81</a>
+            </div>
+            <button type="button" class="header-button header__button">
+                Обратный звонок
+            </button>
+            <button type="button" class="header__sandwich-icon">
+                <img src="./assets/mobile/hamburger.svg" alt="">
+            </button>
+            <button type="button" class="header__phone-icon">
+                <img src="./assets/mobile/phone.svg" alt="">
+            </button>
+            <div class="callback-popup-close-mobile"></div>
+            <button type="button" class="header-menu-close-mobile">
+                <img src="./assets/mobile/close.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider">
+            <div class="slider__title">Новостройки от А101</div>
+        </div>
+        <div class="promo" id="promo">
+            <div class="promo__content">
+                <div class="promo__item promo-item promo-item--big">
+                    <div class="promo-item__content">
+                        <div class="promo-item__label promo-item-label"><div class="promo-item-label__content">Старт продаж</div></div>
+                        <div class="promo-item__image promo-item-image" style="background-image: url('./images/xzel-bor.jpg.pagespeed.ic.KO3cWRPWAW.jpg');">
+                            <div class="promo-item-image-checker">
+                                <div class="promo-item-image-checker__item promo-item-image-checker__item--active" data-src="./images/xbelnoch-gen.jpg.pagespeed.ic.jFH63PKrNs.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="././images/xgen-101.jpg.pagespeed.ic.2XLi4wpOI0.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xskan_fin_8-small.jpg.pagespeed.ic._9_JPZRNSm.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="promo-item__title"><a href="#">Зеленый бор</a></div>
+                        <div class="promo-item__location-and-progress">
+                            <div class="promo-item__location">
+                                <div class="promo-item__address">Пятницкое шоссе</div>
+                                <div class="promo-item__distance">6,5 км от МКАД</div>
+                            </div>
+                            <div class="promo-item__progress promo-item-progress">
+                                <div class="promo-item-progress__bar">
+                                    <div class="promo-item-progress__bar-indicator"  style="width: 50%;"></div>
+                                </div>
+                                <div class="promo-item-progress__hint"><span>Дома сданы</span></div>
+                                <div class="promo-item-progress__popup-hint">
+                                    Стадия строительства
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-item__apartments promo-item-apartments">
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                        </div>
+                        <div class="promo-item__actions">
+                            <div class="promo-item__phone"><a href="tel:+84954017381">8 (495) 401-73-81</a></div>
+                            <button type="button" class="promo-item__order-button">
+                                <span>Записаться на просмотр</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__item promo-item promo-item--big">
+                    <div class="promo-item__content">
+                        <div class="promo-item__label promo-item-label"><div class="promo-item-label__content">Старт продаж</div></div>
+                        <div class="promo-item__image promo-item-image" style="background-image: url('./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg');">
+                            <div class="promo-item-image-checker">
+                                <div class="promo-item-image-checker__item promo-item-image-checker__item--active" data-src="./images/xbelnoch-gen.jpg.pagespeed.ic.jFH63PKrNs.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="././images/xgen-101.jpg.pagespeed.ic.2XLi4wpOI0.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xskan_fin_8-small.jpg.pagespeed.ic._9_JPZRNSm.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="promo-item__title"><a href="#">Зеленый бор</a></div>
+                        <div class="promo-item__location-and-progress">
+                            <div class="promo-item__location">
+                                <div class="promo-item__address">Пятницкое шоссе</div>
+                                <div class="promo-item__distance">6,5 км от МКАД</div>
+                            </div>
+                            <div class="promo-item__progress promo-item-progress">
+                                <div class="promo-item-progress__bar">
+                                    <div class="promo-item-progress__bar-indicator"  style="width: 50%;"></div>
+                                </div>
+                                <div class="promo-item-progress__hint"><span>Дома сданы</span></div>
+                                <div class="promo-item-progress__popup-hint">
+                                    Стадия строительства
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-item__apartments promo-item-apartments">
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                        </div>
+                        <div class="promo-item__actions">
+                            <div class="promo-item__phone"><a href="tel:+84954017381">8 (495) 401-73-81</a></div>
+                            <button type="button" class="promo-item__order-button">
+                                <span>Записаться на просмотр</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__item promo-item promo-item--small">
+                    <div class="promo-item__content">
+                        <div class="promo-item__label promo-item-label"><div class="promo-item-label__content">Старт продаж</div></div>
+                        <div class="promo-item__image promo-item-image" style="background-image: url('./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg');">
+                            <div class="promo-item-image-checker">
+                                <div class="promo-item-image-checker__item promo-item-image-checker__item--active" data-src="./images/xbelnoch-gen.jpg.pagespeed.ic.jFH63PKrNs.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="././images/xgen-101.jpg.pagespeed.ic.2XLi4wpOI0.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xskan_fin_8-small.jpg.pagespeed.ic._9_JPZRNSm.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="promo-item__title"><a href="#">Зеленый бор</a></div>
+                        <div class="promo-item__location-and-progress">
+                            <div class="promo-item__location">
+                                <div class="promo-item__address">Пятницкое шоссе</div>
+                                <div class="promo-item__distance">6,5 км от МКАД</div>
+                            </div>
+                            <div class="promo-item__progress promo-item-progress">
+                                <div class="promo-item-progress__bar">
+                                    <div class="promo-item-progress__bar-indicator"  style="width: 50%;"></div>
+                                </div>
+                                <div class="promo-item-progress__hint"><span>I очередь — Январь 2019</span></div>
+                                <div class="promo-item-progress__popup-hint">
+                                    Стадия строительства
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-item__apartments promo-item-apartments">
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                        </div>
+                        <div class="promo-item__actions">
+                            <div class="promo-item__phone"><a href="tel:+84954017381">8 (495) 401-73-81</a></div>
+                            <button type="button" class="promo-item__order-button">
+                                <span>Записаться на просмотр</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__item promo-item promo-item--small">
+                    <div class="promo-item__content">
+                        <div class="promo-item__label promo-item-label"><div class="promo-item-label__content">Старт продаж</div></div>
+                        <div class="promo-item__image promo-item-image" style="background-image: url('./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg');">
+                            <div class="promo-item-image-checker">
+                                <div class="promo-item-image-checker__item promo-item-image-checker__item--active" data-src="./images/xbelnoch-gen.jpg.pagespeed.ic.jFH63PKrNs.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="././images/xgen-101.jpg.pagespeed.ic.2XLi4wpOI0.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xskan_fin_8-small.jpg.pagespeed.ic._9_JPZRNSm.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="promo-item__title"><a href="#">Зеленый бор</a></div>
+                        <div class="promo-item__location-and-progress">
+                            <div class="promo-item__location">
+                                <div class="promo-item__address">Пятницкое шоссе</div>
+                                <div class="promo-item__distance">6,5 км от МКАД</div>
+                            </div>
+                            <div class="promo-item__progress promo-item-progress">
+                                <div class="promo-item-progress__bar">
+                                    <div class="promo-item-progress__bar-indicator"  style="width: 50%;"></div>
+                                </div>
+                                <div class="promo-item-progress__hint"><span>I очередь — Январь 2019</span></div>
+                                <div class="promo-item-progress__popup-hint">
+                                    Стадия строительства
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-item__apartments promo-item-apartments">
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                        </div>
+                        <div class="promo-item__actions">
+                            <div class="promo-item__phone"><a href="tel:+84954017381">8 (495) 401-73-81</a></div>
+                            <button type="button" class="promo-item__order-button">
+                                <span>Записаться на просмотр</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__item promo-item promo-item--small">
+                    <div class="promo-item__content">
+                        <div class="promo-item__label promo-item-label"><div class="promo-item-label__content">Старт продаж</div></div>
+                        <div class="promo-item__image promo-item-image" style="background-image: url('./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg');">
+                            <div class="promo-item-image-checker">
+                                <div class="promo-item-image-checker__item promo-item-image-checker__item--active" data-src="./images/xbelnoch-gen.jpg.pagespeed.ic.jFH63PKrNs.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="././images/xgen-101.jpg.pagespeed.ic.2XLi4wpOI0.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xik-winter-new.jpg.pagespeed.ic._0ehRfTv6B.jpg"></div>
+                                <div class="promo-item-image-checker__item" data-src="./images/xskan_fin_8-small.jpg.pagespeed.ic._9_JPZRNSm.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="promo-item__title"><a href="#">Зеленый бор</a></div>
+                        <div class="promo-item__location-and-progress">
+                            <div class="promo-item__location">
+                                <div class="promo-item__address">Пятницкое шоссе</div>
+                                <div class="promo-item__distance">6,5 км от МКАД</div>
+                            </div>
+                            <div class="promo-item__progress promo-item-progress">
+                                <div class="promo-item-progress__bar">
+                                    <div class="promo-item-progress__bar-indicator"  style="width: 50%;"></div>
+                                </div>
+                                <div class="promo-item-progress__hint"><span>I очередь — Январь 2019</span></div>
+                                <div class="promo-item-progress__popup-hint">
+                                    Стадия строительства
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-item__apartments promo-item-apartments">
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                            <div class="promo-item-apartments__item promo-item-apartment">
+                                <div class="promo-item-apartment__type"><span class="full">1-комнатная</span><span class="short">1 комн.</span></div>
+                                <div class="promo-item-apartment__space">от 20 м²</div>
+                                <div class="promo-item-apartment__price">от 4 570 812 Р.</div>
+                            </div>
+                        </div>
+                        <div class="promo-item__actions">
+                            <div class="promo-item__phone"><a href="tel:+84954017381">8 (495) 401-73-81</a></div>
+                            <button type="button" class="promo-item__order-button">
+                                <span>Записаться на просмотр</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mortgage" id="mortgage">
+            <h2 class="mortgage__title">Ипотека</h2>
+            <div class="mortgage__description">Позвоните, и мы подберем оптимальный для вас кредит</div>
+            <div class="mortgage__actions">
+                <div class="mortgage__phone"><a href="tel:+84954017381">8 (495) 401-73-81</a></div>
+                <div class="mortgage__callback-button-wrapper">
+                    <button type="button" class="mortgage__callback-button"><span>Обратный звонок</span></button>
+                </div>
+
+            </div>
+            <div class="mortgage__order-list mortgage-order-list">
+                <div class="mortgage-order-list__header">
+                    <div class="mortgage-order-list__header-item mortgage-order-list__header-item--label"></div>
+                    <div class="mortgage-order-list__header-item mortgage-order-list__header-item--bank">Банк</div>
+                    <div class="mortgage-order-list__header-item mortgage-order-list__header-item--payment">Первоначальный взнос</div>
+                    <div class="mortgage-order-list__header-item mortgage-order-list__header-item--rate">Ставка, Р.</div>
+                    <div class="mortgage-order-list__header-item mortgage-order-list__header-item--period">Срок кредита</div>
+                </div>
+                <div class="mortgage-order-list__item mortgage-order-item">
+                    <div class="mortgage-order-item__info mortgage-order-item__info--label"><i></i></div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--bank">РСХБ</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--payment">от 20%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--rate">от 9,75%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--period">до 30 лет</div>
+                </div>
+                <div class="mortgage-order-list__item mortgage-order-item">
+                    <div class="mortgage-order-item__info mortgage-order-item__info--label"><i></i></div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--bank">РСХБ</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--payment">от 20%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--rate">от 9,75%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--period">до 30 лет</div>
+                </div>
+                <div class="mortgage-order-list__item mortgage-order-item">
+                    <div class="mortgage-order-item__info mortgage-order-item__info--label"><i style="background: #014E86;"></i></div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--bank">РСХБ</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--payment">от 20%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--rate">от 9,75%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--period">до 30 лет</div>
+                </div>
+                <div class="mortgage-order-list__item mortgage-order-item">
+                    <div class="mortgage-order-item__info mortgage-order-item__info--label"><i style="background: #014E86;"></i></div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--bank">РСХБ</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--payment">от 20%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--rate">от 9,75%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--period">до 30 лет</div>
+                </div>
+                <div class="mortgage-order-list__item mortgage-order-item">
+                    <div class="mortgage-order-item__info mortgage-order-item__info--label"><i style="background: #014E86;"></i></div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--bank">РСХБ</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--payment">от 20%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--rate">от 9,75%</div>
+                    <div class="mortgage-order-item__info mortgage-order-item__info--period">до 30 лет</div>
+                </div>
+            </div>
+            <div class="mortgage-order-list-mobile mortgage__order-list-mobile">
+                <div class="mortgage-order-list-mobile__item mortgage-order-list-mobile-item">
+                    <div class="mortgage-order-list-mobile-item__label" style="background-color: #006E3B;">
+                    </div>
+                    <div class="mortgage-order-list-mobile__item-content">
+                        <div class="mortgage-order-list-mobile__bank">РСХБ</div>
+                        <div class="mortgage-order-list-mobile__details">
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--payment">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Первоначальный взнос</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 20%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--rate">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Ставка, Р.</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 9,75%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--period">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Срок кредита</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">до 30 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mortgage-order-list-mobile__item mortgage-order-list-mobile-item">
+                    <div class="mortgage-order-list-mobile-item__label" style="background-color: #006E3B;">
+                    </div>
+                    <div class="mortgage-order-list-mobile__item-content">
+                        <div class="mortgage-order-list-mobile__bank">РСХБ</div>
+                        <div class="mortgage-order-list-mobile__details">
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--payment">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Первоначальный взнос</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 20%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--rate">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Ставка, Р.</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 9,75%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--period">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Срок кредита</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">до 30 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mortgage-order-list-mobile__item mortgage-order-list-mobile-item">
+                    <div class="mortgage-order-list-mobile-item__label" style="background-color: #006E3B;">
+                    </div>
+                    <div class="mortgage-order-list-mobile__item-content">
+                        <div class="mortgage-order-list-mobile__bank">РСХБ</div>
+                        <div class="mortgage-order-list-mobile__details">
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--payment">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Первоначальный взнос</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 20%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--rate">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Ставка, Р.</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 9,75%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--period">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Срок кредита</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">до 30 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mortgage-order-list-mobile__item mortgage-order-list-mobile-item">
+                    <div class="mortgage-order-list-mobile-item__label" style="background-color: #006E3B;">
+                    </div>
+                    <div class="mortgage-order-list-mobile__item-content">
+                        <div class="mortgage-order-list-mobile__bank">РСХБ</div>
+                        <div class="mortgage-order-list-mobile__details">
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--payment">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Первоначальный взнос</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 20%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--rate">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Ставка, Р.</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 9,75%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--period">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Срок кредита</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">до 30 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mortgage-order-list-mobile__item mortgage-order-list-mobile-item">
+                    <div class="mortgage-order-list-mobile-item__label" style="background-color: #006E3B;">
+                    </div>
+                    <div class="mortgage-order-list-mobile__item-content">
+                        <div class="mortgage-order-list-mobile__bank">РСХБ</div>
+                        <div class="mortgage-order-list-mobile__details">
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--payment">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Первоначальный взнос</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 20%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--rate">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Ставка, Р.</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">от 9,75%</div>
+                            </div>
+                            <div class="mortgage-order-list-mobile__row mortgage-order-list-mobile__row--period">
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__title">Срок кредита</div>
+                                <div class="mortgage-order-list-mobile__cell mortgage-order-list-mobile__descr">до 30 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mortgage-order-list-mobile__more-button">
+                    <button type="button" class="mortgage-order-list-mobile__more-button-content">
+                        Показать еще
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h2 class="about__title">О компании</h2>
+            <div class="about__description">
+                <div class="about__general">
+                    <p class="about__general--colored">ГК "А101" входит в группу "САМФАР", одну из крупнейших промышленно-финансовых групп в России.</p>
+                    <p>АО "Группа САМФАР" входит в число крупнейших российских работодателей. На предприятиях группы работают свыше 40 тыс человек.</p>
+                </div>
+                <div class="about__block about-block">
+                    <h3>Строительство</h3>
+                    <div class="about-block__description">
+                        <p>ГК "А101" входит в группу "САМФАР", одну из крупнейших промышленно-финансовых групп в России. АО "Группа САМФАР" входит в число крупнейших российских работодателей. На предприятиях группы работают
+                            свыше 40 тыс человек.</p>
+                    </div>
+                </div>
+                <div class="about__block about-block about-block--hidden">
+                    <h3>Промышленный блок</h3>
+                    <div class="about-block__description">
+                        <p>ГК "А101" входит в группу "САМФАР", одну из крупнейших промышленно-финансовых групп в России. АО "Группа САМФАР" входит в число крупнейших российских работодателей. На предприятиях группы работают
+                            свыше 40 тыс человек.</p>
+                    </div>
+                </div>
+                <div class="about__block about-block about-block--hidden">
+                    <h3>Финансовый блок</h3>
+                    <div class="about-block__description">
+                        <p>ГК "А101" входит в группу "САМФАР", одну из крупнейших промышленно-финансовых групп в России. АО "Группа САМФАР" входит в число крупнейших российских работодателей. На предприятиях группы работают
+                            свыше 40 тыс человек.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sales-offices" id="sales-offices">
+            <h2 class="sales-offices__title">Офисы продаж</h2>
+            <div class="sales-offices__actions">
+                <div class="sales-offices__phone">
+                    <a href="tel:+84954017381">8 (495) 401-73-81</a>
+                </div>
+                <div class="sales-offices__callback-button-wrapper">
+                    <button type="button" class="sales-offices__callback-button">
+                        <span>Обратный звонок</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="sales-offices__content">
+                <div class="sales-offices-order-list__wrapper">
+                    <div class="sales-offices__order-list sales-offices-order-list">
+                        <div class="sales-offices-order-list__header">
+                            <div class="sales-offices-order-list__header-item sales-offices-order-list__header-item--office">Офис</div>
+                            <div class="sales-offices-order-list__header-item sales-offices-order-list__header-item--address">Адрес</div>
+                            <div class="sales-offices-order-list__header-item sales-offices-order-list__header-item--regime">Режим работы</div>
+                        </div>
+                        <div class="sales-offices-order-list__item sales-offices-order-list-item">
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--office">Офис продаж в Новой Москве (ул. Николо-Хованская)</div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--address">г. Москва, поселение Сосенское, ул. Николо-Хованская
+                                <div class="sales-offices-order-list-item__info--metro">м. Теплый стан</div>
+                            </div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--regime">Пн - Вс 9.00 - 21.00</div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--phone">8 (495) 401-73-81</div>
+                        </div>
+                        <div class="sales-offices-order-list__item sales-offices-order-list-item">
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--office">Офис продаж в Новой Москве (ул. Николо-Хованская)</div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--address">г. Москва, поселение Сосенское, ул. Николо-Хованская
+                                <div class="sales-offices-order-list-item__info--metro">м. Теплый стан</div>
+                            </div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--regime">Пн - Вс 9.00 - 21.00</div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--phone">8 (495) 401-73-81</div>
+                        </div>
+                        <div class="sales-offices-order-list__item sales-offices-order-list-item">
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--office">Офис продаж в Новой Москве (ул. Николо-Хованская)</div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--address">г. Москва, поселение Сосенское, ул. Николо-Хованская
+                                <div class="sales-offices-order-list-item__info--metro">м. Теплый стан</div>
+                            </div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--regime">Пн - Вс 9.00 - 21.00</div>
+                            <div class="sales-offices-order-list-item__info sales-offices-order-list-item__info--phone">8 (495) 401-73-81</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flat-selection">
+            <div class="flat-selection__content">
+                <div class="flat-selection__content-inner">
+                    <h2 class="flat-selection__title">Подбор квартиры</h2>
+                    <div class="flat-selection__label">Телефон</div>
+                    <input type="text" class="flat-selection__input">
+                    <div class="flat-selection__label">Имя</div>
+                    <input type="text" class="flat-selection__input">
+                    <button type="submit" class="flat-selection__button">
+                        <span>Перезвоните мне</span>
+                    </button>
+                </div>
+                <div class="agreement-policy">
+                    Нажимая на кнопку, я принимаю условия <a href="./agreement-policy.html" class="privacy-policy-link" target="_blank">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных.
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="./images/promologo_10507.jpg" alt="">
+            </div>
+            <div class="footer__phone">
+                <a href="tel:+84954017381">8 (495) 401-73-81</a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &#169; ООО «ГДЕЭТОТДОМ.РУ», 2017
+        </div>
+        <a href="tel:+84954017381" class="call-builder">
+            Связаться с застройщиком
+        </a>
+    </footer>
+    <div class="callback-popup">
+        <div class="callback-popup__content">
+            <div class="callback-popup__content-inner">
+                <h2 class="callback-popup__title">Обратный звонок</h2>
+                <div class="callback-popup__text">Оставьте свои контакты, и мы вам перезвоним</div>
+                <div class="callback-popup__label">Телефон</div>
+                <input type="text" class="callback-popup__input">
+                <div class="callback-popup__label">Имя</div>
+                <input type="text" class="callback-popup__input">
+                <button type="submit" class="callback-popup__button">
+                    <span>Жду звонка!</span>
+                </button>
+                <div class="agreement-policy">
+                    Нажимая на кнопку, я принимаю условия <a href="./agreement-policy.html" class="privacy-policy-link" target="_blank">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных.
+                </div>
+            </div>
+        </div>
+        <div class="thanks">
+            <div class="thanks__title">Спасибо за обращение</div>
+            <div class="thanks__text">Мы свяжемся с вами <br>через несколько минут!</div>
+            <div class="thanks__home"><a href="/">Спасибо, вернуться на главную</a></div>
+        </div>
+        <button type="button" class="close">
+            <img src="./assets/close.svg" alt="">
+        </button>
+    </div>
+
+
+    <div class="privacy-policy">
+        <div class="privacy-policy__content">
+            <div class="privacy-policy__title">Политика конфиденциальности</div>
+            <div class="privacy-policy__text">
+                <p>Настоящая Политика конфиденциальности (далее по тексту &mdash; &laquo;Политика&raquo;) действует в отношении всей информации, добровольно размещенной пользователем в сети Интернет на сайтах <a href="www.gdeetotdom.ru">www.gdeetotdom.ru</a> и <a href="www.gdeetotoffice.ru">www.gdeetotoffice.ru</a> и/или полученной ООО &laquo;ГДЕЭТОТДОМ.РУ&raquo; (далее &mdash; &laquo;Администратор сайта&raquo;) в результате использования Пользователем вышеуказанных сайтов (далее &mdash; &laquo;Сайт&raquo;, &laquo;ресурс&raquo;).</p>
+                <p>Использование Пользователем вышеуказанных ресурсов означает:</p>
+                <p>полное согласие Пользователя с положениями настоящей Политики и условиями обработки персональных данных, указанных в Политике;<br /> согласие на обработку Персональных данных.<br /> Термины и определения:</p>
+                <p>Персональная информация &mdash; информация (сведения, сообщения, данные) независимо от формы их представления, включающая персональные данные Пользователя.</p>
+                <p>Персональные данные &mdash; любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+                <p>Пользователь &mdash; субъект персональных данных, любое лицо (клиент ООО &laquo;ГДЕЭТОТДОМ.РУ&raquo;, представитель юридического лица, индивидуальный предприниматель, иное лицо) обратившееся к информационным материалам Сайтов, имеющее доступ к ресурсам посредством сети Интернет и использующее ресурс.</p>
+                <p>Обработка персональных данных &mdash; любое действие (операция) или совокупность действий (операций), совершаемые с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+                <p>Автоматизированная обработка персональных данных &mdash; обработка персональных данных с помощью средств вычислительной техники.</p>
+                <p>Предоставление персональных данных &mdash; действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц.</p>
+            </div>
+        </div>
+        <div class="privacy-policy__close">Закрыть</div>
+    </div>
+
+    <div class="under-layer">
+    </div>
+    <script src="js/common.js"></script>
+</body>
+</html>
